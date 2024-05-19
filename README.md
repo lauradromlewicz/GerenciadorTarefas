@@ -7,6 +7,8 @@ Tópico 1: Resumo
 O projeto consiste em desenvolver um Sistema de Gerenciamento de Tarefas (Task Management System) utilizando C# com o SDK 8 (Minimal API) e React, integrado ao Entity Framework com banco de dados SQLite. O sistema permitirá aos usuários criar, visualizar, editar e excluir tarefas, além de atribuí-las a usuários específicos e a projetos. Serão implementadas funcionalidades adicionais como categorização de tarefas por projeto, definição de prazo de conclusão, prioridade e sistema de notificação de prazos. 
 
 
+
+
 Tópico 2: Funcionalidades do Projeto
 
 CRUD de tarefas 
@@ -17,6 +19,8 @@ Categorização de tarefas por projeto
 Definição de prazo de conclusão para tarefas 
 Priorização de tarefas 
 Sistema de notificação de prazos 
+
+
 
 
 Tópico 3: Descrição de cada Funcionalidade
