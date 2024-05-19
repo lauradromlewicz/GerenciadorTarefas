@@ -1,0 +1,108 @@
+### Criar Usuário
+POST http://localhost:5251/api/usuario/criar
+Content-Type: application/json
+
+{
+  "nome": "Laura",
+  "email": "Laura@example.com"
+}
+
+### Listar Usuários
+GET http://localhost:5251/api/usuario/listar
+
+### Buscar Usuário por ID
+GET http://localhost:5251/api/usuario/buscar/1
+
+### Alterar Usuário
+PUT http://localhost:5251/api/usuario/alterar/1
+Content-Type: application/json
+
+{
+  "nome": "João Alterado",
+  "email": "joao.alterado@example.com"
+}
+
+### Deletar Usuário
+DELETE http://localhost:5251/api/usuario/deletar/1
+
+### Criar Projeto
+POST http://localhost:5251/api/projeto/criar
+Content-Type: application/json
+
+{
+  "nome": "Estudar"
+}
+
+### Listar Projetos
+GET http://localhost:5251/api/projeto/listar
+
+### Buscar Projeto por ID
+GET http://localhost:5251/api/projeto/buscar/2
+
+### Alterar Projeto
+PUT http://localhost:5251/api/projeto/alterar/2
+Content-Type: application/json
+
+{
+  "nome": "Projeto 1 Alterado"
+}
+
+### Deletar Projeto
+DELETE http://localhost:5251/api/projeto/deletar/2
+
+
+### Criar Tarefa
+POST http://localhost:5251/api/tarefa/criar
+Content-Type: application/json
+
+{
+  "titulo": "Tarefa 4",
+  "descricao": "Estudar programacao - js",
+  "prazo": "2024-05-18T20:59:59",
+  "prioridade": "Media",
+  "projetoId":  4
+}
+
+### Listar Tarefas
+GET http://localhost:5251/api/tarefa/listar
+
+### Buscar Tarefa por ID
+GET http://localhost:5251/api/tarefa/buscar/2
+
+### Alterar Tarefa
+PUT http://localhost:5251/api/tarefa/alterar/2
+Content-Type: application/json
+
+{
+  "titulo": "Tarefa 1 Alterada",
+  "descricao": "Descrição da Tarefa 1 Alterada",
+  "prazo": "2024-06-30T23:59:59",
+  "prioridade": "Media",
+  "projetoId": 2
+}
+
+### Deletar Tarefa
+DELETE http://localhost:5251/api/tarefa/deletar/1
+
+### Listar Tarefas por Prioridade (Baixa)
+GET http://localhost:5251/api/tarefa/listarporprioridade/Baixa
+
+### Listar Tarefas por Prioridade (Media)
+GET http://localhost:5251/api/tarefa/listarporprioridade/Media
+
+### Listar Tarefas por Prioridade (Alta)
+GET http://localhost:5251/api/tarefa/listarporprioridade/Alta
+
+
+### Atribuir Usuário a Tarefa
+POST http://localhost:5251/api/tarefa/3/atribuir/2
+
+### Remover Usuário de Tarefa
+DELETE http://localhost:5251/api/tarefa/3/remover/3
+
+### Listar Tarefas por Projeto
+GET http://localhost:5251/api/projeto/3/tarefas/
+
+### Notificacao
+GET http://localhost:5251/api/notificacao/listar/3
+
